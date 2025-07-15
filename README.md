@@ -19,11 +19,11 @@ A Flask web application that scrapes a Reddit user's posts and comments and gene
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/home.jpg)
+![Home Page](screenshots/home.png)
 
 ### 🧠 Persona Output
 
-![Generated Persona](screenshots/persona.jpg)
+![Generated Persona](screenshots/persona.png)
 
 ---
 
