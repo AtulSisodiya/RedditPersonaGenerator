@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Persona Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reddit Persona Generator</h1>
+            <p>Create a user persona from any Reddit profile</p>
+        </header>
+        
+        <main>
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="reddit_url">Reddit Profile URL</label>
+                    <input type="url" id="reddit_url" name="reddit_url" 
+                           placeholder="https://www.reddit.com/user/username/" required>
+                </div>
+                <button type="submit">Generate Persona</button>
+            </form>
+            
+            {% if error %}
+                <div class="error">{{ error }}</div>
+            {% endif %}
+            
+            <div class="example">
+                <h3>Example:</h3>
+                <p>Try with: <code>https://www.reddit.com/user/kojied/</code></p>
+                <p>Try with: <code>https://www.reddit.com/user/Hungry-Move-6603/</code></p>
+                
+            </div>
+        </main>
+        
+        <footer>
+            <p>Note: This tool analyzes public posts and comments to generate personas.</p>
+        </footer>
+    </div>
+</body>
+</html>

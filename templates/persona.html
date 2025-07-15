@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ persona.name }} - Persona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="persona-container">
+        <div class="persona-header">
+            <h1>{{ persona.name }}</h1>
+            <div class="persona-meta">
+                <span>{{ persona.age }}</span>
+                <span>{{ persona.occupation }}</span>
+                <span>{{ persona.status }}</span>
+                <span>{{ persona.location }}</span>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="persona-traits">
+            <h2>{{ ' '.join(persona.traits) }}</h2>
+            <h3>{{ ' '.join(persona.interests) }}</h3>
+        </div>
+        
+        <div class="persona-section">
+            <h2>MOTIVATIONS</h2>
+            <ul class="motivations">
+                {% for item in persona.motivations %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="personality">
+                <li>PERSONALITY</li>
+                {% for item in persona.personality %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="persona-section">
+            <h2>BEHAVIOUR & HABITS</h2>
+            <ul>
+                {% for item in persona.behaviors %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="persona-section">
+            <h2>GOALS & NEEDS</h2>
+            <ul>
+                {% for item in persona.goals %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="persona-section">
+            <h2>FRUSTRATIONS</h2>
+            <ul>
+                {% for item in persona.frustrations %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="persona-quote">
+            <p>"{{ persona.quote }}"</p>
+        </div>
+        
+        <div class="persona-actions">
+            <a href="/" class="btn">Generate Another</a>
+        </div>
+    </div>
+</body>
+</html>

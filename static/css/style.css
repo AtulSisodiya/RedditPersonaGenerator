@@ -1,0 +1,224 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #ff4500; /* Reddit orange */
+    margin-bottom: 0.5rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input[type="url"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e03e00;
+}
+
+.error {
+    color: #d9534f;
+    padding: 1rem;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.example {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Persona Styles */
+.persona-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.persona-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.persona-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.persona-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 1.5rem 0;
+}
+
+.persona-traits {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.persona-traits h2 {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 0.5rem;
+}
+
+.persona-traits h3 {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.persona-section {
+    margin-bottom: 2rem;
+}
+
+.persona-section h2 {
+    color: #ff4500;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.persona-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.persona-section li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.persona-section li:before {
+    content: "•";
+    color: #ff4500;
+    position: absolute;
+    left: 0;
+}
+
+.motivations, .personality {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.motivations li, .personality li {
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.personality li:first-child {
+    background-color: transparent;
+    padding-left: 0;
+    font-weight: 600;
+}
+
+.persona-quote {
+    font-style: italic;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #ff4500;
+    margin: 2rem 0;
+}
+
+.persona-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e03e00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container, .persona-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .persona-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
