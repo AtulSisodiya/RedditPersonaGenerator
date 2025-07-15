@@ -15,15 +15,15 @@ A Flask web application that scrapes a Reddit user's posts and comments and gene
 - pip (Python package manager)
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🏠 Home Page
+###  Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](Screenshots/home.png)
 
-### 🧠 Persona Output
+###  Persona Output
 
-![Generated Persona](screenshots/persona.png)
+![Generated Persona](Screenshots/persona.png)
 
 ---
 
